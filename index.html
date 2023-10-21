@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jess-porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+  
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"> Jess-porfolio</div>
+            <div class="right"></div>
+                <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="blue"> Jessica</span>
+                <div> and I'm a passionate</div>
+                <div><span class="blue"> Software Engineer</div>
+               
+            </div>
+            <div class="rightsection">
+              <img src="profile.jpg" alt="">
+            </div>
+        </section>
+    </main>
+
+
+<!------about---->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="about.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1>About me</h1>
+                <br>
+                <p>Greetings! I'm Jessica Dsouza, a dedicated student currently in my second year 
+                    of pursuing a Bachelor of Engineering in Computer Science at St. Joseph Engineering College, Mangalore.
+                     My journey in the world of technology is just beginning, 
+                     and I'm excited to share my budding passion for the field. 
+                     I'm eager to learn, collaborate, and take on exciting challenges in the world of technology.
+                      As I continue to develop my skills and knowledge, I look forward to the possibilities that lie ahead in my academic and professional journey.</p>
+                <div class="tab-titles">
+                    <p class="tab-links" onclick="showContent('skills')">Skills</p>
+                    <p class="tab-links" onclick="showContent('education')">Education</p>
+                    <p class="tab-links" onclick="showContent('achievements')">Achievements</p>
+                </div>
+                <div class="tab-contents">
+                    <div class="content" id="skills" style="display: block;"> <!-- Initially visible -->
+                        <ul>
+                            <li>Web Development</li>
+                            <li>Basics of Python,C, Java</li>
+                            <li>Database Management- SQL</li>
+                        </ul>
+                    </div>
+                    <div class="content" id="education">
+                        <ul>
+                            <li>10th-Blossom English Medium High School</li>
+                            <li>PU-Christ King PU College Karkala</li>
+                            <li>BE- St Joseph Engineering College Mangalore</li>
+                        </ul>
+                    </div>
+                    <div class="content" id="achievements">
+                        <ul>
+                            <li>Basics of python- InfosySpringBoard</li>
+                            <li>Business Writing- Coursera</li>
+                            <li>IUCEE - Entrepreneurial thinking</li>
+                            <li>IUCEE - Climate change and Sustainability</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1>Projects</h1>
+        <div class="project">
+            <div class="project-content">
+                <img src="project1.jpg" alt="Smart Helmet" class="project-image">
+                <div class="project-description">
+                    <h2>Smart Helmet - Arduino-based Accident Notification System</h2>
+                    <br>
+                    <p>
+                        The Smart Helmet is a project developed during the second-semester mini-project. 
+                        This innovative helmet is equipped with sensors and Arduino technology to automatically detect accidents 
+                        and send immediate notifications to nearby hospitals for prompt assistance.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-content">
+                <img src="project2.jpg" alt="Smart Helmet" class="project-image">
+                <div class="project-description">
+                    <h2>Farm-Buddy Agricultural Database</h2>
+                    <br>
+                    <p>
+                        The Farmer Details Management System is a web-based project developed during the Fourth-semester  designed to streamline the management of farmer-related information,
+                         including crop details, sales records, and equipment ownership. 
+                         This system provides an efficient platform for farmers to log in and update their information, 
+                        enhancing data accuracy and accessibility.
+                    </p>
+                </div>
+            </div>
+        </div>
+</div>
+<!-----contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact me</h1>
+                <p><a href="" class="home__social-icon"><i class='bx bxs-envelope' ></i></a> 599cksjessica@gmail.com</p>
+                <p><a href="" class="home__social-icon"><i class='bx bxl-whatsapp' ></i></a> 9632869070</p>
+                <div class="home__social">
+                    <a href="https://in.linkedin.com/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://github.com/" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+                <a href="CV-jessica.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <br>
+                    <input type="email" name="Emailid" placeholder="Your Email" required>
+                    <br>
+                    <textarea name="Message" rows="4" placeholder="Send Your Message here"></textarea>
+                    <br>
+                    <button type="Submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright -Student Portfolio by Jessica Dsouza</p>
+    </div>
+</div>
+
+
+<script>
+  function showContent(sectionId) {
+    const contents = document.getElementsByClassName("content");
+    for (const content of contents) {
+        content.style.display = "none"; // Hide all content sections
+    }
+    const sectionToShow = document.getElementById(sectionId);
+    sectionToShow.style.display = "block"; // Show the selected section
+}
+
+</script>
+</body>
+</html>
